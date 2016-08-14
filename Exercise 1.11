@@ -1,0 +1,31 @@
+
+public class PopulationGrowth {
+
+	public static void main(String[] args) {
+		// Calculates Census Population Growth
+		
+	     int population = 312032486;
+		 int  year = (60 * 60 * 24 * 365);
+		 int birth = year / 7;
+		 int death = year / 13;
+		 int immigrant = year / 45;		
+		
+
+			System.out.println("Current Population = 312,032,486");
+			System.out.println("One birth every 7 seconds = " +  birth);
+			System.out.println("One death every 13 seconds = " + death);
+			System.out.println("One immigrant every 45 seconds= " + immigrant);
+			
+			
+			System.out.println("First year = " + (population + birth + immigrant - death));
+			System.out.println("Second year = " + ((birth + immigrant - death) * 2 + population));
+			System.out.println("Third year = " + ((birth + immigrant - death) * 3 + population));
+			System.out.println("Fourth year = " + ((birth + immigrant - death) * 4 + population));
+			System.out.println("Fifth year = " + ((birth + immigrant - death) * 5 + population));
+
+      }
+
+
+  }
+
+
